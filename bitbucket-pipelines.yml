@@ -1,0 +1,21 @@
+image: node:22-alpine
+
+pipelines:
+  tags:
+    # Run with tags like v1.0.0, v2.3.4 etc ...
+    'v*.*.*':
+      - step:
+          name: Build and Publish to npm
+          caches:
+            - node
+          script:
+            # install dependencies,
+            - npm ci
+            # authenticate to npm
+            - npm whoami || (echo "Invalid NPM_TOKEN" && exit 1)
+            #  build 
+            - npm run build
+            # check what will be published
+            - npm pack --dry-run
+            # publish to npm
+            - npm publish --access public
