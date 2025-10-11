@@ -1,14 +1,25 @@
 {
   "name": "@galloptech/nest-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable NestJS core utilities (decorators, pipes, helpers, BaseService, etc.)",
   "license": "MIT",
   "main": "dist/index.js",
-  "keywords": ["nestjs", "core", "decorators", "types", "helpers", "BaseService","utils","pipes"],
-  "bugs": { "url": "https://bitbucket.org/gallop-tech/gallop-tech-core-be/issues" },
+  "keywords": [
+    "nestjs",
+    "core",
+    "decorators",
+    "types",
+    "helpers",
+    "BaseService",
+    "utils",
+    "pipes"
+  ],
+  "bugs": {
+    "url": "https://bitbucket.org/gallop-tech/gallop-tech-core-be/issues"
+  },
   "repository": {
     "type": "git",
-     "url": "git+https://bitbucket.org/gallop-tech/gallop-tech-core-be.git"
+    "url": "git+https://bitbucket.org/gallop-tech/gallop-tech-core-be.git"
   },
   "types": "dist/index.d.ts",
   "files": [
@@ -16,15 +27,14 @@
     "README.md"
   ],
   "exports": {
-  ".": {
-    "require": "./dist/index.js",
-    "types": "./dist/index.d.ts"
-  }
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "engines": {
-  "node": ">=20"
+    "node": ">=20"
   },
-  
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "clean": "rimraf dist",
@@ -41,8 +51,12 @@
     "rxjs": "^7.8.0"
   },
   "peerDependenciesMeta": {
-  "@nestjs/typeorm": { "optional": true },
-  "typeorm": { "optional": true }
+    "@nestjs/typeorm": {
+      "optional": true
+    },
+    "typeorm": {
+      "optional": true
+    }
   },
   "dependencies": {
     "class-transformer": "^0.5.1",
