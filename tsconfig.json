@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "rootDir": "core",
+      "outDir": "dist",
+      "target": "ES2019",
+      "module": "CommonJS",
+      "declaration": true,
+      "sourceMap": true,
+      "moduleResolution": "Node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "declarationMap": true
+    },
+    "include": [
+      "core/decorators/**/*",
+      "core/helpers/**/*",
+      "core/pipes/**/*",
+      "core/responses/**/*",
+      "core/utils/**/*",
+      "core/constant/**/*",
+      "core/services/base.service.ts",
+      "core/types/response.ts",
+      "core/index.ts"
+    ]
+  }
+  

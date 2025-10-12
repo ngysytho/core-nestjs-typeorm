@@ -1,0 +1,77 @@
+{
+  "name": "@galloptech/nest-core",
+  "version": "1.0.2",
+  "description": "Reusable NestJS core utilities (decorators, pipes, helpers, BaseService, etc.)",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "keywords": [
+    "nestjs",
+    "core",
+    "decorators",
+    "types",
+    "helpers",
+    "BaseService",
+    "utils",
+    "pipes"
+  ],
+  "bugs": {
+    "url": "https://bitbucket.org/gallop-tech/gallop-tech-core-be/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/gallop-tech/gallop-tech-core-be.git"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "typeorm": "^0.3.25",
+    "express": "^4.18.2",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.0"
+  },
+  "peerDependenciesMeta": {
+    "@nestjs/typeorm": {
+      "optional": true
+    },
+    "typeorm": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.5.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
