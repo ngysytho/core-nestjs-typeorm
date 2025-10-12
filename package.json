@@ -1,6 +1,6 @@
 {
   "name": "@galloptech/nest-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reusable NestJS core utilities (decorators, pipes, helpers, BaseService, etc.)",
   "license": "MIT",
   "main": "dist/index.js",
