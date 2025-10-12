@@ -46,6 +46,9 @@ Now that you're more familiar with your Bitbucket repository, go ahead and add a
 
 
 # How to update package
-npm version patch    # Explain:fix bug: 1.0.0 -> 1.0.1
-npm version minor    # Explain:feature: 1.0.1 -> 1.1.0
-npm version major    # Explain:breaking: 1.x -> 2.0.0
+npm version patch 
+1. Explain:fix bug: 1.0.0 -> 1.0.1
+npm version minor    
+2. Explain:feature: 1.0.1 -> 1.1.0
+npm version major     
+3. Explain:breaking: 1.x -> 2.0.0
